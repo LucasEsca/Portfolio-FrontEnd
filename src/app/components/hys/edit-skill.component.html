@@ -1,4 +1,4 @@
-<div class="container" *ngIf="skill">
+<!--<div class="container" *ngIf="skill">
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
@@ -16,4 +16,41 @@
             </form>
         </div>
     </div>
-</div>
+</div>-->
+
+<section class="vh-100" style="background-color: #53d68a;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <h3 class="mb-5">Hard & Soft Skill</h3>
+              <h5 class="mb-5">Edite Skill</h5>
+  
+  
+              <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre de la Skill</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="skill.nombre" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="porcentaje">Ingrese el porcentaje</label>
+                    <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
+                </div>
+                <br>
+                <button class="btn btn-primary">
+                    Actualizar
+                </button>
+            </form>
+  
+              <hr class="my-4">
+  
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
