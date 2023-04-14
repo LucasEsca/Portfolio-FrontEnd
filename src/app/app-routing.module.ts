@@ -8,16 +8,18 @@ import { NeweducacionComponent } from './components/educacion/neweducacion.compo
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
 import { NewSkillComponent } from './components/hys/new-skill.component';
 import { EditSkillComponent } from './components/hys/edit-skill.component';
+import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   { path: 'nuevaexp', component: NewExperienciaComponent},
   { path: 'editexp/:id', component: EditExperienciaComponent},
- { path: 'nuevaedu', component: NeweducacionComponent},
+  { path: 'nuevaedu', component: NeweducacionComponent},
   { path: 'editedu/:id', component: EditeducacionComponent},
   { path: 'newskill', component: NewSkillComponent},
-  { path: 'editskill/:id', component: EditSkillComponent}
+  { path: 'editskill/:id', component: EditSkillComponent},
+  { path: 'editacercade/:id', component: EditAcercaDeComponent },
 
 ];
 

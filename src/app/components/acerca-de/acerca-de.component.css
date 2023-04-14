@@ -5,12 +5,14 @@ div{
 /*estilo foto perfil*/
 @media(min-width: 576px){
     #fotoperfil{
-        position: absolute;
-        width: 15%;
         border-radius: 100%;
         box-shadow: 3px 3px 6px gray;
-        left: 3%;
-        top: 600px;
+    }
+
+    .descripcion{
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media(max-width: 575px){
