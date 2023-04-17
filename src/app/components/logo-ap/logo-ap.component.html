@@ -4,13 +4,15 @@
             <img src="../../../assets/APLogo.png" id="logoAP">
         </div>
         <div class="redes">
-               <a href=""><img src="../../../assets/linkedin.png" id="linkedin"></a>
+                <a href=""class="btn text-white btn-lg btn-floating" style="background-color: #2b43ac;" role="button">
+                    <img src="../../../assets/linkedin-in.svg" id="linkedin"></a>
                 <!-- <a href=""><img src="../../../assets/twitter.png" id="twitter"></a>-->
                 <!-- <a href=""><img src="../../../assets/instagram.png" id="instagram"></a>-->
-                <a href="https://github.com/LucasEsca?tab=overview&from=2023-02-01&to=2023-02-28"><img src="../../../assets/github.png" id="github"></a>
+                 <a href="https://github.com/LucasEsca?tab=overview&from=2023-02-01&to=2023-02-28"class="btn text-white btn-lg btn-floating" style="background-color: #f1f1f1;"  role="button">
+                    <img src="../../../assets/github.svg" id="github"></a>
                 <!-- <a href=""><img src="../../../assets/facebook.png" id="facebook"></a>-->
-                <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
-                <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+                <button type="button" type="button" class="btn btn-light btn-rounded" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+                <button type="button" type="button" class="btn btn-dark btn-rounded" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
         </div>
     </div>
 </div>

@@ -2,7 +2,7 @@
 
     <h1>Hard & Soft skills</h1>
     <div class="col-lg-2">
-        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+        <button class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark" routerLink="/newskill" *ngIf="isLogged">Nueva Skill</button>
     </div>
 
 
@@ -11,28 +11,40 @@
         [percent]="(skill.porcentaje)" 
         [radius]="90" [imageSrc]="''" 
         [title]="(skill.nombre)"
-        [titleColor]="'#212F3C'"
+        [titleColor]="'#444444'"
         [showTitle]="true" 
         [showImage]="false" 
         [imageHeight]="70" 
         [imageWidth]="70" 
         [showUnits]="false"
+        [lazy]="true"
+        [unitsColor] = "'#444444'"
         [showSubtitle]="false" 
-        [outerStrokeWidth]="16" 
-        [innerStrokeWidth]="2" 
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'" 
+        [subtitleColor] = "'#A9A9A9'"
+        [space] = "-10"
+        [radius]="60"
+        [backgroundPadding]="5"
+        [outerStrokeGradientStopColor]="'#53a9ff'"
+        [showInnerStroke]="true"
+        [showZeroOuterStroke]="true"
+        [outerStrokeWidth]="10" 
+        [innerStrokeWidth]="10" 
+        [outerStrokeColor]="'#4882c2'"
+        [innerStrokeColor]="'#e7e8ea'" 
         [animation]="true" 
-        [animationDuration]="600">
+        [animationDuration]="600"
+        [outerStrokeGradient]="true"
+        >
+        
         </circle-progress>
 
         <div>
             <td *ngIf="isLogged">
-                <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+                <button class="btn btn-outline-secondary btn-rounded" data-mdb-ripple-color="dark" routerLink="/editskill/{{skill.id}}">
                     <i class="bi bi-pencil-fill"></i></button>
             </td>
             <td *ngIf="isLogged">
-                <button class="btn btn-danger" (click)="delete(skill.id)">
+                <button class="btn btn-outline-danger btn-rounded" data-mdb-ripple-color="dark" (click)="delete(skill.id)">
                     <i class="bi bi-trash-fill"></i></button>
             </td>
         </div>

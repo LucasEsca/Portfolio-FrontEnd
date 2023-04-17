@@ -1,0 +1,11 @@
+.background{
+    background-image: url("/assets/Lynx.svg");
+}
+
+form{
+    color: antiquewhite;
+}
+
+h3, p {
+    color: antiquewhite;
+}
