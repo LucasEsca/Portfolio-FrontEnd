@@ -1,3 +1,10 @@
 .background{
-    background: linear-gradient(to right, #5de0e6, #004aad);
+    background-image: url("/assets/hys.svg");
+}
+.card{
+    background: linear-gradient(to bottom left, #8c52ff, #5ce1e6);
+}
+
+button{
+    background: linear-gradient( #8c52ff, #5ce1e6, #004aad);
 }

@@ -1,3 +1,6 @@
 .background{
-    background: linear-gradient(to right, #5de0e6, #004aad);
+    background-image: url("/assets/est.svg");
+}
+.card{
+    opacity: 0.8;
 }

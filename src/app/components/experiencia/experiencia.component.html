@@ -6,14 +6,16 @@
         </button>
     </div>
 
-    <div class="col lg 1"></div>
+    
     <div class="col-lg-11">
-        <table class="table">
-            <tbody>
-                <tr *ngFor="let Experiencia of expe">
-                    <td>
+        <div class="card-body p-5" >
+            <div class="card shadow-2-strong border border-dark " >
+             <table class="table">
+                 <tbody>
+                    <tr *ngFor="let Experiencia of expe">
+                     <td>
                         <h2>{{Experiencia.nombreE}}</h2>
-                    </td>
+                     </td>
                     <td>{{Experiencia.descripcionE}}</td>
                     <td *ngIf="isLogged">
                         <button type="button" class="btn btn-outline-secondary btn-rounded" data-mdb-ripple-color="dark" routerLink="/editexp/{{Experiencia.id}}">
@@ -27,5 +29,6 @@
             </tbody>
         </table>
     </div>
-
+</div>
+</div>
 </div>
