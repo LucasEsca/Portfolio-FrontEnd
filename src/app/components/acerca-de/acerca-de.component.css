@@ -22,10 +22,13 @@
         border-radius: 100%;
         box-shadow: 3px 3px 6px gray;
         left: 33%;
-        top: 460px;
+        top: 400px;
     }
     .row{
         padding: 20px;
+    }
+    #nombre{
+        text-align: center;
     }
 }
 /*estilo nombre*/

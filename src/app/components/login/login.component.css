@@ -1,5 +1,6 @@
 .background{
     background-image: url("/assets/Lynx.svg");
+    background-size: cover;
 }
 
 form{
