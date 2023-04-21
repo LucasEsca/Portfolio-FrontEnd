@@ -7,3 +7,7 @@ footer{
     text-align: center;
     box-shadow: 2px -2px 5px #999;
 }
+
+.row{
+    background: linear-gradient(to right,#8c52ff, #5de0e6);
+}

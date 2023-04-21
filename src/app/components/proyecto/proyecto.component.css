@@ -15,3 +15,10 @@ h1{
 .img-proyecto{
     box-shadow: 10px 10px 30px #000000;
 }
+.accordion-item{
+    background: linear-gradient(to right,#8c52ff, #5de0e6);
+}
+
+.accordion-button{
+    background: linear-gradient(to right, #5de0e6, #004aad);
+}

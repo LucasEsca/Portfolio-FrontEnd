@@ -2,7 +2,9 @@
 
     <h1>Hard & Soft skills</h1>
     <div class="col-lg-2">
-        <button class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark" routerLink="/newskill" *ngIf="isLogged">Nueva Skill</button>
+        <button class="btn btn-default btn-circle btn-lg" style="background-color: #2fac2b;"  routerLink="/newskill" *ngIf="isLogged">
+            <i class="bi bi-folder-plus"></i>
+        </button>
     </div>
 
 
@@ -40,11 +42,11 @@
 
         <div>
             <td *ngIf="isLogged">
-                <button class="btn btn-outline-secondary btn-rounded" data-mdb-ripple-color="dark" routerLink="/editskill/{{skill.id}}">
+                <button class="btn btn-default btn-circle btn-lg" style="background-color:#2fac2b;"  routerLink="/editskill/{{skill.id}}">
                     <i class="bi bi-pencil-fill"></i></button>
             </td>
             <td *ngIf="isLogged">
-                <button class="btn btn-outline-danger btn-rounded" data-mdb-ripple-color="dark" (click)="delete(skill.id)">
+                <button class="btn btn-default btn-circle btn-lg" style="background-color: #ac2b2b;"  (click)="delete(skill.id)">
                     <i class="bi bi-trash-fill"></i></button>
             </td>
         </div>
