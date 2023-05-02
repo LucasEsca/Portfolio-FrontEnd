@@ -12,13 +12,13 @@
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapseOne">
                         <td>
                             <h2>{{Experiencia.nombreE}}</h2>
                          </td>
                     </button>
                   </h2>
-                  <div id="collapse" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div id="collapse" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <td><p>{{Experiencia.descripcionE}}</p></td>
                         <td *ngIf="isLogged">
